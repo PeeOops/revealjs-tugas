@@ -1,48 +1,93 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>REVEAL.JS</title>
+	<link rel="icon" type="image/svg+xml" href="https://revealjs.com/images/favicon.svg" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2
-						<aside class="notes">
-						<p>Some notes</p>
-						</aside>
-						<p>Some slide text</p>
-						<aside class="notes">
-						<p>and some more notes</p>
-					</aside>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<a href="https://revealjs.com">
+					<img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo"
+						style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</a>
+				<p>
+					<small>Dibuat oleh <span style="color:rgb(204, 111, 119)">Alvin Goliandi</span> dan <span
+							style="color:rgb(204, 111, 119)">Richie</span></small>
+				</p>
+			</section>
+			<section>
+				<h4>Apa itu Reveal.js?</h4>
+				<p class="fragment fade-up">Sebuah framework open source yang dapat digunakan untuk menampilkan hasil
+					presentasi dengan menggunakan HTML.
+				</p>
+			</section>
+			<section>
+				<section>Instalasi Reveal.js</section>
+				<section>
+					<h4>Install node.js</h4>
+					<iframe src="https://nodejs.org/en/" width="700px" height="700px" title="node.js"></iframe>
 				</section>
-			</div>
+				<section>
+					<h4>Menggunakan Command Prompt</h4>
+					<pre>
+						<code class="fragment fade-up">
+						git clone https://github.com/hakimel/reveal.js.git
+						</code>
+						<code class="fragment fade-up">
+						cd reveal.js
+						</code>
+						<code class="fragment fade-up">
+						npm install
+						</code>
+						<code class="fragment fade-up">
+						npm start
+						</code>
+					</pre>
+					<small class="fragment fade-up">Akses <a href="http://localhost:8000/">localhost:8000</a> pada web
+						browser anda.</small>
+				</section>
+				<section>
+					<h4>Alternatif lain</h4>
+					<p class="fragment fade-left" style="font-size: 25px;">Download file melalui <a
+							href="https://github.com/hakimel/reveal.js/archive/refs/heads/master.zip">https://github.com/hakimel/reveal.js</a>
+					</p>
+					<p class="fragment fade-left" style="font-size: 25px;">Extract file yang telah di download</p>
+					<p class="fragment fade-left" style="font-size: 25px;">Buka file index.html pada browser anda</p>
+
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
